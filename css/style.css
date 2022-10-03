@@ -232,58 +232,49 @@ first div in the grid  and place it in the grid. */
   .container{
     display:grid;
     overflow:hidden;
-    grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-template-rows: auto;
+    grid-template-columns: 50px auto 500px auto 50px;
     row-gap: 15px;     
     align-content: center;
   }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
   .about{
-    grid-column-start: 3;
-    grid-column-end: -1;
+    grid-column-start: 3/span 2;
     grid-row-start:2;
   }
 
   .clients{
-    grid-column-start: 3;
-    grid-column-end: -1;
+    grid-column-start: 3/span 2;
     grid-row-start:4;
   }
 
   .method-image{
-    grid-column-start: 3;
-    grid-column-end: -1;
+    grid-column-start: 3/span 2;
     grid-row-start:3;
   }
 
   .contact-image{
-    grid-column-start: 3;
-    grid-column-end: -1;
+    grid-column-start: 3/span 2;
     grid-row-start:5;
   }
 
   .method{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 2/span 2;
     grid-row-start:3;
   }
 
   .contact{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 2/span 2;
     grid-row-start:5;
   }
 
   .about-image{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 2/span 2;
     grid-row-start:2;
   }
 
   .clients-image{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 2/span 2;
     grid-row-start:4;
   }
  /* Step 13:Write the selector/rule property to update the .text-block class */
